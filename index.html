@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Store</title>
+  <!--Bootstrap cdn-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid bg-gradient-warning" id="container">
+    <p class="text-center h1">Our Store</p>
+    <div class="NavButtons">
+      <button type="button" class="btn btn-outline-secondary border border-dark" value="all" id="btn1">
+        All
+      </button>
+      <button type="button" class="btn btn-outline-secondary border border-dark" value="cakes" id="btn2">
+        CUPCAKES
+      </button>
+      <button type="button" class="btn btn-outline-secondary border border-dark" value="cupcake" id="btn3" >
+        CAKES
+      </button>
+      <button type="button" class="btn btn-outline-secondary border border-dark" value="sweet" id="btn4">
+        SWEETS
+      </button>
+      <button type="button" class="btn btn-outline-secondary border border-dark" value="doughnuts" id="btn5">
+        DOUGHNUTS
+      </button>
+    </div>
+    <div class="SearchBar">
+      <form id="form">
+        <div class="input-group">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+          <input id="search" type="text" class="form-control" autofocus placeholder="Search" name="search"
+            autocomplete="off" />
+        </div>
+        <a>
+          <ul class="list-group" id="list"></ul>
+        </a>
+      </form>
+    </div>
+
+    <div class="row" id="AllDiv">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="/w3images/lights.jpg" target="_blank">
+            <img src="Sweet-Item.jpg" alt="Lights" style="width: 100%;" />
+            <div class="caption" id="searchContent">
+              <ul id="#title">
+               <li><span>sweets</span></li>
+                
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="/w3images/lights.jpg" target="_blank">
+            <img src="Sweet-Item.jpg" alt="Lights" style="width: 100%;" />
+            <div class="caption" id="searchContent">
+              <ul id="#title">
+               <li><span>CupCakes</span></li>
+                
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="/w3images/lights.jpg" target="_blank">
+            <img src="Sweet-Item.jpg" alt="Lights" style="width: 100%;" />
+            <div class="caption" id="searchContent">
+              <ul id="#title">
+               <li><span>Cakes</span></li>
+                
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="/w3images/lights.jpg" target="_blank">
+            <img src="Sweet-Item.jpg" alt="Lights" style="width: 100%;" />
+            <div class="caption" id="searchContent">
+              <ul id="#title">
+               <li><span>Doughnuts</span></li>
+                
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="/w3images/nature.jpg" target="_blank">
+            <img src="CupCake.jpg" alt="Nature" style="width: 100%;" />
+            <div class="caption" id="searchContent">
+              <ul id="#title">
+               <li><span>sweets</span></li>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="/w3images/fjords.jpg" target="_blank">
+            <img src="Cake.jpg" alt="Fjords" style="width: 100%;" />
+            <div class="caption" id="searchContent">
+              <ul id="#title">
+               <li><span>Doughnuts</span></li>
+                
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="CupCakeDiv" style="display: none;">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="/w3images/lights.jpg" target="_blank">
+            <img src="Sweet-Item.jpg" alt="Lights" style="width: 100%;" />
+            <div class="caption" id="searchContent">
+              <ul id="#title">
+               <li><span>Cupcakes</span></li>
+                
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="/w3images/lights.jpg" target="_blank">
+            <img src="Sweet-Item.jpg" alt="Lights" style="width: 100%;" />
+            <div class="caption" id="searchContent">
+              <ul id="#title">
+               <li><span>Cupcakes</span></li>
+                
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="/w3images/lights.jpg" target="_blank">
+            <img src="Sweet-Item.jpg" alt="Lights" style="width: 100%;" />
+            <div class="caption" id="searchContent">
+              <ul id="#title">
+               <li><span>Cupcakes</span></li>
+                
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row" id="CakeDiv" style="display: none;">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="/w3images/lights.jpg" target="_blank">
+            <img src="Sweet-Item.jpg" alt="Lights" style="width: 100%;" />
+            <div class="caption" id="searchContent">
+              <ul id="#title">
+               <li><span>Cake</span></li>
+                
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="/w3images/lights.jpg" target="_blank">
+            <img src="Sweet-Item.jpg" alt="Lights" style="width: 100%;" />
+            <div class="caption" id="searchContent">
+              <ul id="#title">
+               <li><span>Cake</span></li>
+                
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="/w3images/lights.jpg" target="_blank">
+            <img src="Sweet-Item.jpg" alt="Lights" style="width: 100%;" />
+            <div class="caption" id="searchContent">
+              <ul id="#title">
+               <li><span>Cake</span></li>
+                
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="DoughnutDiv" style="display: none;">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="/w3images/lights.jpg" target="_blank">
+            <img src="Sweet-Item.jpg" alt="Lights" style="width: 100%;" />
+            <div class="caption" id="searchContent">
+              <ul id="#title">
+               <li><span>Doughnuts</span></li>
+                
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="/w3images/lights.jpg" target="_blank">
+            <img src="Sweet-Item.jpg" alt="Lights" style="width: 100%;" />
+            <div class="caption" id="searchContent">
+              <ul id="#title">
+               <li><span>Doughnuts</span></li>
+                
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="/w3images/lights.jpg" target="_blank">
+            <img src="Sweet-Item.jpg" alt="Lights" style="width: 100%;" />
+            <div class="caption" id="searchContent">
+              <ul id="#title">
+               <li><span>Doughnuts</span></li>
+                
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="SweetDiv" style="display: none;">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="/w3images/lights.jpg" target="_blank">
+            <img src="Sweet-Item.jpg" alt="Lights" style="width: 100%;" />
+            <div class="caption" id="searchContent">
+              <ul id="#title">
+               <li><span>Sweets</span></li>
+                
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="/w3images/lights.jpg" target="_blank">
+            <img src="Sweet-Item.jpg" alt="Lights" style="width: 100%;" />
+            <div class="caption" id="searchContent">
+              <ul id="#title">
+               <li><span>Sweets</span></li>
+                
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="/w3images/lights.jpg" target="_blank">
+            <img src="Sweet-Item.jpg" alt="Lights" style="width: 100%;" />
+            <div class="caption" id="searchContent">
+              <ul id="#title">
+               <li><span>Sweets</span></li>
+                
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("btn1").addEventListener("click", function(){
+      var box1 = document.getElementById("AllDiv");
+      if(box1.style.display == "none"){
+        box1.style.display = "block";
+      }
+    })
+
+    document.getElementById("btn2").addEventListener("click", function(){
+      var box2 = document.getElementById("CupCakeDiv");
+      var all = document.getElementById("AllDiv");
+      var cake = document.getElementById("CakeDiv");
+      var sweet = document.getElementById("SweetDiv");
+      var Doughnut = document.getElementById("DoughnutDiv");
+
+      if(box2.style.display == "none"){
+        box2.style.display = "block";
+        all.style.display = "none";
+        cake.style.display = "none";
+        sweet.style.display = "none";
+        Doughnut.style.display = "none";
+
+      }
+    })
+
+    document.getElementById("btn3").addEventListener("click", function(){
+      var box3 = document.getElementById("CakeDiv");
+      var all = document.getElementById("AllDiv");
+      var cupcake = document.getElementById("CupCakeDiv");
+      var sweet = document.getElementById("SweetDiv");
+      var Doughnut = document.getElementById("DoughnutDiv");
+      if(box3.style.display == "none"){
+        box3.style.display = "block";
+        all.style.display = "none";
+        cupcake.style.display = "none";
+        sweet.style.display = "none";
+        Doughnut.style.display = "none";
+
+      }
+    })
+
+    document.getElementById("btn4").addEventListener("click", function(){
+      var box4 = document.getElementById("SweetDiv");
+      var all = document.getElementById("AllDiv");
+      var cupcake = document.getElementById("CupCakeDiv");
+      var cake = document.getElementById("CakeDiv");
+      var Doughnut = document.getElementById("DoughnutDiv");
+      if(box4.style.display == "none"){
+        box4.style.display = "block";
+        all.style.display = "none";
+        cupcake.style.display = "none";
+        cake.style.display = "none";
+        Doughnut.style.display = "none";
+      }
+    })
+
+    document.getElementById("btn5").addEventListener("click", function(){
+      var box5 = document.getElementById("DoughnutDiv");
+      var all = document.getElementById("AllDiv");
+      var cupcake = document.getElementById("CupCakeDiv");
+      var sweet = document.getElementById("SweetDiv");
+      var cake = document.getElementById("CakeDiv");
+      if(box5.style.display == "none"){
+        box5.style.display = "block";
+        all.style.display = "none";
+        cupcake.style.display = "none";
+        cake.style.display = "none";
+        sweet.style.display = "none";  
+      }
+    })
+  </script>
+
+  <script>
+    const list = document.querySelector('#searchContent ul');
+    const searchBar = document.forms['form'].querySelector('input[name="search"]');
+    searchBar.addEventListener("keyup", function(e){
+      const term = e.target.value.toLowerCase();
+      const items = list.getElementsByTagName('li');
+      Array.from(items).forEach(function(item){
+        const title = item.firstElementChild.textContent;
+        if(title.toLowerCase().indexOf(term) != -1){
+          item.style.display = "block";
+        } else{
+          item.style.display = "none";
+        }
+      })
+    })
+  </script>
+
+</body>
+
+</html>
